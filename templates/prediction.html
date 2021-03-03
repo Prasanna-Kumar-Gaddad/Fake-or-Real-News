@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Fake or Real News - Prediction</title>
+
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <meta name='viewport' content="width = device-width , initial-scale = 1"> 
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <a href="/" class="home">Fake or Real News</a>
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="/">Details</a></li>
+                    <li><a class="active" href="/prediction">Prediction</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <form action="{{ url_for('predict') }}" method="POST">
+                    <h3>Title</h3>
+                    <br>
+                    <input name="title" class="form-input" type="text" >
+                    <br>
+                    <br>
+                    <h3>News</h3>
+                    <br>
+                    <textarea class="form-input-news" name="text" id="" cols="30" rows="10"></textarea>
+                    <br>
+
+                    <button type="submit" class="myButton">Predict News</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
