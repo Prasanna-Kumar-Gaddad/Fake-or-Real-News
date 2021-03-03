@@ -40,7 +40,6 @@ jupyter-console==6.1.0
 jupyter-core==4.6.3
 Keras-Preprocessing==1.1.2
 kiwisolver==1.2.0
-lxml==4.5.1
 Markdown==3.2.2
 MarkupSafe==1.1.1
 matplotlib==3.2.1
@@ -51,7 +50,6 @@ nbformat==5.0.6
 notebook==6.0.3
 numpy==1.18.4
 oauthlib==3.1.0
-opencv-python==4.2.0.34
 opt-einsum==3.2.1
 packaging==20.4
 pandas==1.0.3
